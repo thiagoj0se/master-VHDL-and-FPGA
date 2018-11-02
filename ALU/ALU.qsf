@@ -1,0 +1,134 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+# Date created = 12:56:39  October 24, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ALU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY ALU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:56:39  OCTOBER 24, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 13.0
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name VHDL_FILE Bit_Adder.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VHDL_FILE Byte_Adder.vhd
+set_global_assignment -name VHDL_FILE ALU.vhd
+set_global_assignment -name VHDL_FILE Byte_Record.vhd
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_N25 -to S[0]
+set_location_assignment PIN_N26 -to S[1]
+set_location_assignment PIN_P25 -to S[2]
+set_location_assignment PIN_AE14 -to S[3]
+set_location_assignment PIN_G26 -to clock_op
+set_location_assignment PIN_P23 -to clock_sin
+set_location_assignment PIN_N23 -to clock_fin
+set_location_assignment PIN_W26 -to calculate
+set_location_assignment PIN_AE23 -to result[0]
+set_location_assignment PIN_AF23 -to result[1]
+set_location_assignment PIN_AB21 -to result[2]
+set_location_assignment PIN_AC22 -to result[3]
+set_global_assignment -name VHDL_FILE Byte_LShift.vhd
+set_global_assignment -name VHDL_FILE Byte_RShift.vhd
+set_global_assignment -name VHDL_FILE Bit_Subtractor.vhd
+set_global_assignment -name VHDL_FILE Byte_Subtractor.vhd
+set_global_assignment -name VHDL_FILE Byte_BTD.vhd
+set_global_assignment -name VHDL_FILE Seven_Segment_Display.vhd
+set_global_assignment -name VHDL_FILE Segments_Manager.vhd
+set_location_assignment PIN_R2 -to first_segment[0]
+set_location_assignment PIN_P4 -to first_segment[1]
+set_location_assignment PIN_P3 -to first_segment[2]
+set_location_assignment PIN_M2 -to first_segment[3]
+set_location_assignment PIN_M3 -to first_segment[4]
+set_location_assignment PIN_M5 -to first_segment[5]
+set_location_assignment PIN_M4 -to first_segment[6]
+set_location_assignment PIN_AF10 -to result_segment[0]
+set_location_assignment PIN_AB12 -to result_segment[1]
+set_location_assignment PIN_AC12 -to result_segment[2]
+set_location_assignment PIN_AD11 -to result_segment[3]
+set_location_assignment PIN_AE11 -to result_segment[4]
+set_location_assignment PIN_V14 -to result_segment[5]
+set_location_assignment PIN_V13 -to result_segment[6]
+set_location_assignment PIN_U9 -to second_segment[0]
+set_location_assignment PIN_U1 -to second_segment[1]
+set_location_assignment PIN_U2 -to second_segment[2]
+set_location_assignment PIN_T4 -to second_segment[3]
+set_location_assignment PIN_R7 -to second_segment[4]
+set_location_assignment PIN_R6 -to second_segment[5]
+set_location_assignment PIN_T3 -to second_segment[6]
+set_location_assignment PIN_L3 -to unused_segment_5[0]
+set_location_assignment PIN_L2 -to unused_segment_5[1]
+set_location_assignment PIN_L9 -to unused_segment_5[2]
+set_location_assignment PIN_L6 -to unused_segment_5[3]
+set_location_assignment PIN_L7 -to unused_segment_5[4]
+set_location_assignment PIN_P9 -to unused_segment_5[5]
+set_location_assignment PIN_N9 -to unused_segment_5[6]
+set_location_assignment PIN_T2 -to unused_segment_4[0]
+set_location_assignment PIN_P6 -to unused_segment_4[1]
+set_location_assignment PIN_P7 -to unused_segment_4[2]
+set_location_assignment PIN_T9 -to unused_segment_4[3]
+set_location_assignment PIN_R5 -to unused_segment_4[4]
+set_location_assignment PIN_R4 -to unused_segment_4[5]
+set_location_assignment PIN_R3 -to unused_segment_4[6]
+set_location_assignment PIN_Y23 -to unused_segment_3[0]
+set_location_assignment PIN_AA25 -to unused_segment_3[1]
+set_location_assignment PIN_AA26 -to unused_segment_3[2]
+set_location_assignment PIN_Y26 -to unused_segment_3[3]
+set_location_assignment PIN_Y25 -to unused_segment_3[4]
+set_location_assignment PIN_U22 -to unused_segment_3[5]
+set_location_assignment PIN_W24 -to unused_segment_3[6]
+set_location_assignment PIN_AB23 -to unused_segment_2[0]
+set_location_assignment PIN_V22 -to unused_segment_2[1]
+set_location_assignment PIN_AC25 -to unused_segment_2[2]
+set_location_assignment PIN_AC26 -to unused_segment_2[3]
+set_location_assignment PIN_AB26 -to unused_segment_2[4]
+set_location_assignment PIN_AB25 -to unused_segment_2[5]
+set_location_assignment PIN_Y24 -to unused_segment_2[6]
+set_location_assignment PIN_V20 -to unused_segment_1[0]
+set_location_assignment PIN_V21 -to unused_segment_1[1]
+set_location_assignment PIN_W21 -to unused_segment_1[2]
+set_location_assignment PIN_Y22 -to unused_segment_1[3]
+set_location_assignment PIN_AA24 -to unused_segment_1[4]
+set_location_assignment PIN_AA23 -to unused_segment_1[5]
+set_location_assignment PIN_AB24 -to unused_segment_1[6]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
